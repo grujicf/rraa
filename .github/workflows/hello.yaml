@@ -15,9 +15,9 @@ jobs:
     steps:
       - name: Checkout step
         uses: actions/checkout@v4
-      - name: Hello step
-        run: echo "Hello world!"
       - name: MkDir step
         run: mkdir temp-dir
+      - name: Hello step
+        run: echo "Hello world!"
       - name: Pwd step
         run: pwd
