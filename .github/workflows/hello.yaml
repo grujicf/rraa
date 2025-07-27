@@ -1,0 +1,21 @@
+name: Hello world
+
+on:
+  push:
+    branches: main
+
+defaults:
+  run:
+    working-directory: ./temp-dir
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Hello step
+        run: echo "Hello world!"
+      - name: MkDir step
+        run: mkdir temp-dir
+      - name: Pwd step
+        run: pwd
