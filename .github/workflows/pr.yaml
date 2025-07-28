@@ -1,0 +1,17 @@
+name: PR workflow - RANDOM
+
+on:
+  pull_request:
+    branches: main
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout step
+        run: echo "Hi from the PR"
+      - uses: actions/checkout@v4.2.2
+      - name: ls
+        run: |
+          ls
